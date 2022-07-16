@@ -1,6 +1,6 @@
 package se.lexicon.inheritance;
 
-public class Animal {
+public abstract class Animal {
 
     private String name;
     private double weight;
@@ -13,9 +13,7 @@ public class Animal {
     public Animal() {
     }
 
-    public void eat(){
-        System.out.println("default eating behavior for animal");
-    }
+    public abstract void eat();
 
     public String getName() {
         return name;
